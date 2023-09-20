@@ -1,0 +1,49 @@
+
+.login-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+    margin:50px;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid orange;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 25px;
+}
+.login-label{
+    color:rgb(170, 112, 4);
+    font-family: "Roboto";
+    font-weight: bold;
+    align-self: flex-start;
+    margin-bottom: 5px;
+    margin-top: 8px;
+}
+input{
+    border:0.5px solid rgb(178, 173, 164);
+    border-radius:5px;
+    padding: 5px;  
+}
+input:hover{
+    border-color:orange;
+    outline: none;
+}
+.login-button{
+    margin: 20px;
+    padding: 5px 10px 5px 10px;
+    color:orange;
+    font-weight: bold;
+    background-color: transparent;
+    cursor:pointer;
+    outline: none;
+    border:2px solid orange;
+}
+.login-button:hover{
+    background-color: orange;
+    color:white;
+}

@@ -1,0 +1,48 @@
+.home-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: auto;
+    background-color: rgb(249, 232, 202);
+    min-height: 100vh;
+}
+.welcome-heading{
+    color: brown;    
+}
+.game-level-buttons-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+.start-button{
+    background-color: orange;
+    color:white;
+    border:none;
+    outline:none;
+    border-radius: 15px;
+    margin:10px;
+    width:70px;
+    padding:10px 10px 10px 10px;
+    align-self: center;    
+}
+.start-button:hover{
+    opacity: 0.5;
+}
+.color-box{
+    height:210px;
+    width:260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    border-radius: 15px;
+}
+.game-box-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
