@@ -36,7 +36,6 @@ class HomePage extends Component {
     this.setState({ activeLevelId: id });
     this.setState({ clicksNeeded: clicks });
   };
-
   onClickStart = () => {
     this.setState({ isGameStarted: true });
     let { count } = this.state;
