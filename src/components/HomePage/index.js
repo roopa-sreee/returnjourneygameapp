@@ -39,8 +39,9 @@ class HomePage extends Component {
 
   onClickStart = () => {
     this.setState({ isGameStarted: true });
-    let { count, color, clickCount, clicksNeeded } = this.state;
+    let { count } = this.state;
     let intervalId = setInterval(() => {
+      const { color, clickCount, clicksNeeded } = this.state;
       if (count > 0) {
         if (color === "green") {
           this.setState({ color: "red" });
@@ -49,22 +50,20 @@ class HomePage extends Component {
         }
       } else if (count === 0) {
         clearInterval(intervalId);
-        console.log("interval cleared");
         this.setState({ isGameStarted: false });
       } else if (clickCount === clicksNeeded) {
         clearInterval(intervalId);
         this.setState({ isGameStarted: false });
       }
       this.setState((prevState) => ({ count: prevState.count - 1 }));
-    }, 1500);
+    }, 1000);
   };
 
   onClickGameBox = () => {
-    const { color, intervalId } = this.state;
+    const { color } = this.state;
     if (color === "green") {
       this.setState((prevState) => ({ clickCount: prevState.clickCount + 1 }));
     } else {
-      clearInterval(intervalId);
       this.setState({ isGameStarted: false });
     }
   };
